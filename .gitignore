@@ -1,0 +1,11 @@
+# mac-app build artifacts
+mac-app/.build/
+mac-app/StudyBuddy.app/
+
+# backend
+backend/node_modules/
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+.DS_Store
