@@ -15,12 +15,26 @@ can compare study time with friends — overall, or head-to-head.
 
 ## Get it
 
-**Download:** grab `StudyBuddy.app.zip` from the [latest release](../../releases/latest),
-unzip it, and drag `StudyBuddy.app` to `/Applications`.
+**Easiest — one line in Terminal:**
 
-Since the app isn't notarized/signed by an Apple Developer account, the first
-launch will be blocked by Gatekeeper. Right-click (or Control-click) the app
-and choose **Open**, then confirm in the dialog — you only need to do this once.
+```bash
+curl -fsSL https://raw.githubusercontent.com/tylko17/studybuddy/main/install.sh | bash
+```
+
+This downloads the latest release, installs it to `/Applications`, clears the
+Gatekeeper quarantine flag, and launches it. (The app isn't notarized by an
+Apple Developer account yet, so a plain double-click after unzipping manually
+gets blocked by macOS with no obvious way through on current macOS versions —
+the script sidesteps that.)
+
+**Manual alternative:** grab `StudyBuddy.app.zip` from the
+[latest release](../../releases/latest), unzip it, drag `StudyBuddy.app` to
+`/Applications`, then in Terminal run:
+
+```bash
+xattr -cr /Applications/StudyBuddy.app
+codesign --force --deep --sign - /Applications/StudyBuddy.app
+```
 
 Pick a username the first time it opens. That's it — click the book icon any
 time you sit down to study.
