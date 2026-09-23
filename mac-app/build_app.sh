@@ -28,5 +28,8 @@ if command -v iconutil >/dev/null 2>&1; then
     rm -rf "$(dirname "${ICONSET_DIR}")"
 fi
 
+echo "==> Ad-hoc signing app bundle"
+codesign --force --deep --sign - "${APP_DIR}"
+
 echo "==> Done: ${APP_DIR}"
 echo "Run it with: open ${APP_DIR}"
