@@ -5,6 +5,17 @@ Click the book icon, hit **Start Studying**, and your session gets timed. Stop
 whenever you're done and your time gets logged to a shared leaderboard so you
 can compare study time with friends — overall, or head-to-head.
 
+## Download
+
+**[⬇ Download StudyBuddy.app.zip](https://github.com/tylko17/groupsi/releases/latest/download/StudyBuddy.app.zip)**
+
+1. Click the link above (or grab it from the [Releases page](../../releases/latest) if you want an older version)
+2. Open the downloaded zip, then drag **StudyBuddy.app** into your **Applications** folder
+3. Double-click it to launch — it's signed and notarized by Apple, so macOS won't show any security warning
+4. Pick a username the first time it opens
+
+That's it. Click the book icon in your menu bar any time you sit down to study.
+
 ## Features
 
 - Lives in the menu bar (book icon) — no dock icon, no clutter
@@ -12,16 +23,6 @@ can compare study time with friends — overall, or head-to-head.
 - Shared leaderboard (today / this week / all time) across everyone using the app
 - Head-to-head comparison against any other username
 - Session survives an accidental relaunch (resumes an in-progress session)
-
-## Get it
-
-Grab `StudyBuddy.app.zip` from the [latest release](../../releases/latest),
-unzip it, and drag `StudyBuddy.app` to `/Applications`. Double-click to open —
-it's signed and notarized by Apple, so there's no security warning to click
-through.
-
-Pick a username the first time it opens. That's it — click the book icon any
-time you sit down to study.
 
 ## How it works
 
